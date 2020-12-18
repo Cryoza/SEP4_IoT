@@ -16,7 +16,7 @@ FAKE_VOID_FUNC(sd_setCo2, shared_data_t*, float);
 
 FAKE_VALUE_FUNC(float, sd_getCo2, shared_data_t*);
 
-class VIAFreeRTOSTest : public ::testing::Test {
+class Co2TaskTest : public ::testing::Test {
 protected:
 	void SetUp() override {
 		RESET_FAKE(mh_z19_takeMeassuring);
